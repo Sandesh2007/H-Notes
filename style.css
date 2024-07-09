@@ -1,0 +1,626 @@
+html{
+  scroll-behavior: smooth;
+}
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+body {
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 100%);
+  font-family: system-ui;
+  animation: fadeIn 1s ease;
+  
+}
+p,h3,li{
+  color: black;
+}
+
+img {
+  width: 40px;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* This is for the top message of page*/
+.welcome {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 1.2em;
+  max-width: fit-content;
+  background: rgba(49, 49, 49, 0.12);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.1px);
+  -webkit-backdrop-filter: blur(6.1px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+.welcome:hover {
+  transform: scale(1.01);
+}
+.welcome div{
+  color: black;
+  font-weight: bold;
+}
+.waving-hand {
+
+  animation: wave-hand 2.1s 0.6s infinite;
+  display: inline-block;
+
+}
+
+/* This is for the HSS logo and H-note pill and the account image */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: transparent;
+  transition: transform 0.3s ease-in-out;
+  -webkit-font-smoothing: antialiased;
+}
+
+.pill {
+  display: flex;
+  align-items: center;
+  padding: 5px 5px;
+  background-color: #b130d8;
+  margin-left: auto;
+  margin-right: 10px;
+  background: rgba(49, 49, 49, 0.12);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.1px);
+  -webkit-backdrop-filter: blur(6.1px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-font-smoothing: antialiased;
+  transition: transform 0.3s ease-in-out;
+}
+
+.pill:hover {
+  transform: scale(1.01);
+}
+
+.pill-logo {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  background: rgba(49, 49, 49, 0.12);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.1px);
+  -webkit-backdrop-filter: blur(6.1px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.pill-logo:hover {
+  transform: scale(1.01);
+}
+
+.pill-acc {
+  display: flex;
+  align-items: center;
+  padding: auto;
+  border-radius: 25px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.pill-acc:hover {
+  transform: scale(1.02);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo img {
+  margin-right: 10px;
+  width: auto;
+  height: 40px;
+  border-radius: 16px;
+  animation: Move 1s ease 0s normal forwards; 
+  transform: translateX(90px);
+}
+.logo p{
+  font-weight: bold;
+}
+
+.H{
+  display: inline-block; 
+  opacity: 0;
+  animation: H 1s ease-in 0.5s normal forwards;
+  
+}
+.H-{
+  display: inline-block; 
+  opacity: 0;
+  animation: H- 1s ease-in 0.7s normal forwards;
+}
+.N{
+  display: inline-block; 
+  opacity: 0;
+  animation: N 1s ease-in 0.9s normal forwards;
+}
+.O{
+  display: inline-block; 
+  opacity: 0;
+  animation: O 1s ease-in 1.1s normal forwards;
+}
+.T{
+  display: inline-block; 
+  opacity: 0;
+  animation: T 1s ease-in 1.3s normal forwards;
+}
+.E{
+  display: inline-block; 
+  opacity: 0;
+  animation: E 1s ease-in 1.5s normal forwards;
+}
+.S{
+  display: inline-block; 
+  opacity: 0;
+  animation: S 1s ease-in 1.7s normal forwards;
+}
+
+.socials {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  -webkit-font-smoothing: antialiased;
+}
+
+.socials a {
+  width: auto;
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 10px;
+}
+.socials a:hover {
+  transform: scale(1.05);
+}
+
+/* styles for all text */
+.text1 {
+  color: black;
+  cursor: text;
+  font-weight: bold;
+}
+
+.text {
+  color: black;
+  font-weight: bold;
+}
+
+#note {
+  font-weight: 600;
+  color: black;
+}
+
+#notetxt {
+  font-weight: 500;
+  color: white;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+/* This will show text above Footer logo [Github Telegram Facebook Whatsapp] */
+.tooltip {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  width: auto;
+  color: #000000;
+  text-align: center;
+  padding: 2px 5px;
+  position: absolute;
+  bottom: 50px;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  background: rgba(49, 49, 49, 0.12);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.1px);
+  -webkit-backdrop-filter: blur(6.1px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* This is for Note popup on startup */
+.card {
+  margin: auto;
+  width: auto;
+  padding: 10px;
+  background: rgba(49, 49, 49, 0.12);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.1px);
+  -webkit-backdrop-filter: blur(6.1px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-font-smoothing: antialiased;
+}
+
+.tools {
+  display: flex;
+  align-items: center;
+}
+
+.circle {
+  padding: 0 3px;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.red {
+  background-color: #ff605c;
+  cursor: pointer;
+}
+
+.yellow {
+  background-color: #ffbd44;
+}
+
+.green {
+  background-color: #00ca4e;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  display: none;
+}
+
+#popup-toggle:checked ~ .popup {
+  display: block;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 999;
+  backdrop-filter: blur(5px) !important;
+}
+
+#popup-toggle:checked ~ .overlay {
+  display: block;
+}
+
+/* this is for the images/ image slider */
+.container1 {
+  padding: 2rem;
+  height: 80%;
+}
+.container1 {
+  position: relative;
+  padding: 2rem;
+  height: 80%;
+}
+
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(49, 49, 49, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(6.1px);
+  color: #000000;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.prev {
+  left: 10px;
+  size: 50px;
+}
+
+.next {
+  right: 10px;
+  size: 50px;
+}
+
+.prev:hover, .next:hover {
+  transform: translateY(-50%) scale(1.1);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .container1 {
+    padding: 1rem;
+  }
+
+  .prev, .next {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .prev, .next {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.prev:hover, .next:hover {
+  transform: translateY(-50%) scale(1.1);
+}
+
+.slider-wrapper {
+  position: relative;
+  max-width: 48rem;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.1px);
+  -webkit-backdrop-filter: blur(6.1px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.slider img,
+.slider a {
+  width: 100%;
+  height: auto;
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.1px);
+  -webkit-backdrop-filter: blur(6.1px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+.about{
+  background: rgba(49, 49, 49, 0.12);
+  margin: auto;
+  background-color: transparent;
+  height: auto;
+  width:900px;
+  border-color: white;
+  border-radius: 20px;
+}
+.content{
+  height: auto;
+  padding: 12px;
+  width:auto;
+  background: rgba(49, 49, 49, 0.12);
+}
+.about img{
+  align-self: center;
+  width: 100px;
+  margin-left: 45%;
+}
+
+
+/* this will make about me responsive */
+@media  screen and (max-width:500px) {
+  .about{
+    height: auto;
+    width: auto;
+  }
+  .about img{
+    margin-left: 80px;
+  }
+  .content{
+    height: auto;
+    width: auto;
+  }
+}
+@media screen and ( max-height:700px){
+  .about{
+    height: auto;
+    width: auto;
+  }
+  .content{
+    height: auto;
+    width: auto;
+  }
+}
+/* Thisshows only one image on smaller screens */
+@media (max-width: 768px) {
+  .slider img,
+  .slider a {
+    flex: 0 0 100%;
+  }
+}
+
+/* This shows two images on larger screens */
+@media (min-width: 769px) {
+  .slider img,
+  .slider a {
+    flex: 0 0 50%;
+  }
+}
+
+/* Thhis is for footer */
+.footer {
+  margin-top: 80px;
+}
+
+.fab {
+  margin-right: 8px;
+}
+
+.footer__text {
+  color: black;
+  text-align: center;
+}
+
+
+
+.about {
+  display: flex;
+  color: white;
+  overflow: hidden;
+  width: 700px;
+  max-width: 90%;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.1px);
+  -webkit-backdrop-filter: blur(6.1px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+.content {
+  padding: 20px;
+  flex: 1;
+}
+
+h3 {
+  margin-top: 0;
+}
+
+.section {
+  margin-top: 10px;
+}
+
+ul {
+  padding-left: 20px;
+  list-style: none;
+}
+
+ul li::before {
+  content: '•';
+  color: #ffffff;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+
+/* animations */
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes size {
+  0% {transform: scale(1.001);}
+  50% {transform: scale(1.01);}
+  100% {transform: scale(1.001);}
+}
+
+@keyframes Move {
+  0% {transform:translateX(120px);}
+  100% {transform:translateX(0px);}
+}
+
+/* Animation for text  */
+
+@keyframes H {
+  0% {transform: translateY(50px);opacity: 0; }
+  80% {transform: translateY(-10px);}
+  100% {transform: translateY(0);opacity: 1;}
+}
+
+@keyframes H- {
+  0% {transform: translateY(20px);opacity: 0;}
+  80%{transform: translateY(-10px);}
+  100% {transform: translateY(0);opacity: 1;}
+}
+
+@keyframes N {
+  0% {transform: translateY(20px);opacity: 0;}
+  80%{transform: translateY(-10px);}
+  100% {transform: translateY(0);opacity: 1;
+  }
+}
+
+@keyframes O {
+  0% {transform: translateY(20px);opacity: 0;
+  }
+  80%{transform: translateY(-10px);}
+  100% {transform: translateY(0);opacity: 1;}
+}
+
+@keyframes T {
+  0% {transform: translateY(20px);opacity: 0;}
+  80%{transform: translateY(-10px);}
+  100% {transform: translateY(0);opacity: 1;}
+}
+
+@keyframes E {
+  0% {transform: translateY(20px);opacity: 0;}
+  80%{transform: translateY(-10px);}
+  100% {transform: translateY(0);opacity: 1;}
+}
+@keyframes S {
+  0% { transform: translateY(20px);opacity: 0;}
+  80%{transform: translateY(-10px);}
+  100% {transform: translateY(0);opacity: 1;}
+}
+
+/* hand wave */
+@keyframes wave-hand {
+
+  0% {transform: rotate(0deg);}
+  10% {transform: rotate(16deg);}
+  20% {transform: rotate(-6deg);}
+  30% {transform: rotate(16deg);}
+  40% {transform: rotate(-4deg);}
+  50% {transform: rotate(16deg);}
+  60% {transform: rotate(0deg);}
+  100% {transform: rotate(0deg);}
+}
+

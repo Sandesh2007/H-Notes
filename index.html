@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>H-notes</title>
+  </head>
+  <body>
+    <span class="welcome">
+      <div>Hey there <span class="waving-hand">👋</span></div>
+    </span>
+    <div class="container">
+      <div class="pill-logo">
+        <div class="logo">
+          <img src="assests/file.png" height="40px" alt="logo here" />
+          <p class="H">H</p>
+          <p class="H-">-</p>
+          <p class="N">N</p>
+          <p class="O">O</p>
+          <p class="T">T</p>
+          <p class="E">E</p>
+          <p class="S">S</p>
+        </div>
+      </div>
+      <div class="pill-acc">
+        <a href="#aboutme">
+          <img
+            src="assests/person.svg"
+            height="40px"
+            alt="account image"
+            draggable="false"
+          />
+        </a>
+      </div>
+    </div>
+    <input type="checkbox" id="popup-toggle" checked style="display: none" />
+
+    <!-- For note -->
+    <div class="card popup">
+      <div class="tools">
+        <div class="circle">
+          <label for="popup-toggle" class="red box"></label>
+        </div>
+        <div class="circle">
+          <span class="yellow box"></span>
+        </div>
+        <div class="circle">
+          <span class="green box"></span>
+        </div>
+      </div>
+      <div class="card__content">
+        <p class="text"></p>
+        <p id="note"><b>Note: </b><br /></p>
+        <p id="notetxt">
+          This is a Note sharing / downloading project created by a random
+          Coder. You can get notes for class 12 subject [ Class 11 will be added
+          soon]. If you want to share your notes you can contact us in
+          whatsapp,facebook,telegram.
+        </p>
+      </div>
+    </div>
+    <div class="overlay"></div>
+
+    <!-- for books logo -->
+    <section class="container1">
+      <button class="prev">&lt;</button>
+      <div class="slider-wrapper">
+        <div class="slider">
+          <a href="Class-12[T]/Class12T.html"><img src="assests/books.jpeg" alt="" /></a>
+          <a href="Class-12[G]/Class12G.html"><img src="assests/books.jpeg" alt="" /></a>
+          <a href="Class-11[T]/Class11T.html"><img src="assests/books.jpeg" alt="" /></a>
+          <a href="Class-11[G]/Class11G.html"><img src="assests/books.jpeg" alt="" /></a>
+        </div>
+      </div>
+      <button class="next">&gt;</button>
+    </section>
+    <div class="about" id="aboutme" >
+      <div class="content">
+        <h5 style="color: black;">About Me</h5>
+        <img src="assests/facebook-svgrepo-com.svg" alt=""><hr>
+          <p >Hi, I am Sandesh Sharma. I am 17, and I live in Rupandehi.</p>
+          <p>I study at HSS in the Technical stream.</p>
+          <div class="section">
+              <h3>My skills:</h3>
+              <ol>
+                  <li style="list-style: disc;">Basic Java and Python</li>
+                  <li style="list-style: disc;">Web design & Develop</li>
+              </ol>
+          </div>
+          <div class="section">
+              <h3>My creations:</h3>
+              <ol>
+                  <li style="list-style: disc;">Edzy: A GUI package installer for Linux.</li>
+                  <li style="list-style: disc;">Gotpad: A basic notepad with AI using Java.</li>
+              </ol>
+          </div>
+          <p>You can check my work at Github .<br>You can contact me on social accounts for some help 😃.</p>
+      </div>
+  </div>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="socials">
+        <a href="#" target="_blank">
+          <div class="tooltip">
+            <img
+              src="assests/telegram-svgrepo-com.svg"
+              height="40px"
+              alt="Telegram"
+            />
+            <span class="tooltip-text">Telegram</span>
+          </div>
+        </a>
+        <a href="#" target="_blank">
+          <div class="tooltip">
+            <img
+              src="assests/whatsapp-svgrepo-com.svg"
+              height="40px"
+              alt="WhatsApp"
+            />
+            <span class="tooltip-text">WhatsApp</span>
+          </div>
+        </a>
+        <a href="https://github.com/sandesh2007" target="_blank">
+          <div class="tooltip">
+            <img
+              src="assests/github-142-svgrepo-com.svg"
+              height="40px"
+              alt="Github"
+            />
+            <span class="tooltip-text">Github</span>
+          </div>
+        </a>
+        <a href="#" target="_blank">
+          <div class="tooltip">
+            <img
+              src="assests/facebook-svgrepo-com.svg"
+              height="40px"
+              alt="Facebook"
+            />
+            <span class="tooltip-text">Facebook</span>
+          </div>
+        </a>
+      </div>
+      <div class="separador"></div>
+      <p class="footer__text">Copyright &copy; 2024</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
