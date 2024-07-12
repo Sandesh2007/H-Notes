@@ -7,7 +7,6 @@ html{
 	}
 }
 body {
-  background: rgb(2,0,36);
 background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 100%);
   font-family: system-ui;
   animation: fadeIn 1s ease;
@@ -64,7 +63,7 @@ a:visited {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  background-color: transparent;
+  background-color: white;
   transition: transform 0.3s ease-in-out;
   -webkit-font-smoothing: antialiased;
 }
@@ -76,7 +75,7 @@ a:visited {
   background-color: #b130d8;
   margin-left: auto;
   margin-right: 10px;
-  background: rgba(49, 49, 49, 0.12);
+  /* background: rgba(49, 49, 49, 0.12); */
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(6.1px);
@@ -259,7 +258,6 @@ a:visited {
   margin: auto;
   width: auto;
   padding: 10px;
-  background: rgba(49, 49, 49, 0.12);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(6.1px);
@@ -331,6 +329,7 @@ a:visited {
 .container1 {
   padding: 2rem;
   height: 80%;
+  background-color: white;
 }
 .container1 {
   position: relative;
@@ -430,9 +429,8 @@ a:visited {
 
 
 .about{
-  background: rgba(49, 49, 49, 0.12);
+  background-color:white;
   margin: auto;
-  background-color: transparent;
   height: auto;
   width:900px;
   border-color: white;
